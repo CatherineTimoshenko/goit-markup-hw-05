@@ -364,12 +364,27 @@
                     </li>
                 </ul>
             </div>
+            <div class="subscribe-wrap">
+                <div class="text-input-wrap">
+                    <p class="title-subscribe">Subscribe</p>
+                    <label>
+                        <input type="email" class="input-email" name="footer-email" placeholder="E-mail">
+                    </label>
+                </div>
+                <button type="submit" class="subscribe-btn">Subscribe<svg class="footer-btn-icon" width="24" height="24"><use href="./images/icons.svg#icon-fly"></use></svg></button>
+            
+            </div>
         </div>
     </footer>
 
-<div class="backdrop">
+<div class="backdrop is-open">
     <div class="modal">
-        <button type="button" class="modal-close">X</button>
+        <button type="button" class="modal-close">
+            <svg class="modal-icon-close" width="8" height="8">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+       
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
             <label for="user-name" class="modal-label">Name</label>
@@ -397,7 +412,14 @@
             </div>
             <label for="user-comment" class="modal-label">Comment</label>
             <textarea name="user-comment" id="user-comment" placeholder="Text input" class="modal-text"></textarea>
-              <button type="submit">Send</button>
+                <input type="checkbox" name="privacy" required id="privacy" class="modal-check visually-hidden">
+                <label for="privacy" class="check-text">
+                    <span class="check-text-icon">
+                        <svg class="modal-check-icon" width="10" height="8">
+                            <use href="./images/icons.svg#icon-check"></use>
+                        </svg>
+                    </span> I accept the terms and conditions of the <a href="" class="check-link">Privacy Policy</a></label>
+              <button type="submit" class="button-send">Send</button>
         </form>
     </div>
 </div>
